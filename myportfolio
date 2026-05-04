@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushboo | Portfolio</title>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3')
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color: #b993ff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #b993ff;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #b993ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.hero h1 span {
+  color: #b993ff;
+}
+
+.hero button {
+  margin-top: 18px;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 30px;
+  background: #b993ff;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.hero button a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero button:hover {
+  background: #d6c2ff;
+}
+
+.moon {
+  width: 260px;
+  margin-top: 20px;
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+/* Sections */
+.section {
+  padding: 85px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: #dccccf;
+}
+
+/* Skills */
+.list {
+  display: inline-block;
+  text-align: left;
+  line-height: 36px;
+  font-size: 18px;
+}
+
+/* Projects */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 290px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  color: #d9caff;
+}
+
+/* Contact */
+#contact p {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+#contact a {
+  color: #b993ff;
+  text-decoration: none;
+}
+
+#contact i {
+  margin-right: 8px;
+  color: #b993ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 22px;
+  background: rgba(0, 0, 0, 0.55);
+  margin-top: 40px;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo-container">
+    <img src="https://photos.app.goo.gl/cZyM8Pc4MiibUAv99" alt="Khushboo Logo">
+    <h2 class="logo">Khushboo</h2>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <h1>Hello, I'm <span>Khushboo</span></h1>
+  <p>Aspiring Web Developer • 1st Year • CSE</p>
+  <button><a href="#contact">Contact Me</a></button>
+  <img src="https://pngimg.com/uploads/moon/moon_PNG35.png" class="moon">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I'm Khushboo, a first-year B.Tech Computer Science Engineering student at
+    Indira Gandhi Delhi Technical University for Women.  
+    I am passionate about Web Development and creating visually appealing,
+    meaningful digital experiences.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <ul class="list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript </li>
+    <li>C++</li>
+    <li>Data Structures And Algorithms(Learning)</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio built using HTML & CSS with a night-sky theme.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>GreenLeaf Café Website</h3>
+      <p>A modern café website created using HTML & CSS with responsive layout.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Login/Signup Page</h3>
+      <p>User authentication UI created using HTML, CSS & JavaScript.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <h2>Education</h2>
+  <p>B.Tech in Computer Science & Engineering (1st Year)</p>
+  <p>Indira Gandhi Delhi Technical University for Women</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:khushbooaggarwal9582@gmail.com">khushbooaggarwal9582@gmail.com</a></p>
+  <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/khushboo-aggarwal9582/" target="_blank">linkedin.com/in/khushboo-aggarwal9582</a></p>
+  <p><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/Khushbooaggarwal9582" target="_blank">github.com/Khushbooaggarwal952</a></p>
+</section>
+
+<footer>
+  © 2025 Khushboo | All Rights Reserved
+</footer>
+
+</body>
+</html>
